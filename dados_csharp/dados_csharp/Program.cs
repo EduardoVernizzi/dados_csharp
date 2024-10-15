@@ -1,7 +1,7 @@
 ﻿using dados_csharp.Models;
 
-Pessoa p1 = new Pessoa("Eduardo", "Vernizzi");
-Pessoa p2 = new Pessoa("Thiago", "Vernizzi");
+Pessoa p1 = new Pessoa(nome: "Eduardo", sobrenome: "Vernizzi");
+Pessoa p2 = new Pessoa(nome: "Thiago", sobrenome: "Vernizzi");
 
 
 Curso ingles = new Curso();
