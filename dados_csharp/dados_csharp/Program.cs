@@ -2,6 +2,154 @@
 using System.Globalization;
 
 
+
+//Usando a coleção Dictionary
+//Dictionary<string,string> estados = new Dictionary<string,string>();
+
+//estados.Add("SP", "São Paulo");
+//estados.Add("BA", "Bahia");
+//estados.Add("MG", "Minas Gerais");
+
+//foreach (var item in estados)
+//{
+//    Console.WriteLine($"Chave: {item.Key}. Valor: {item.Value}\n");
+//}
+//Console.WriteLine("---------------");
+//estados.Remove("BA");
+
+//estados["SP"] = "São Paulo - valor alterado";
+
+//foreach (var item in estados)
+//{
+//    Console.WriteLine($"Chave: {item.Key}. Valor: {item.Value}\n");
+//}
+
+
+//string chave = "BA";
+//Console.WriteLine($"Verificando o elemento {chave}");
+
+//if (estados.ContainsKey(chave))
+//{
+//    Console.WriteLine($"Valor Existente: {chave}");
+//}
+//else
+//{
+//    Console.WriteLine($"Valor não existente. É seguro adicionar a chave {chave}");
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Exemplo de PILHAS
+//Stack<int> pilha = new Stack<int>();
+
+//pilha.Push(4);
+//pilha.Push(6);
+//pilha.Push(8);
+//pilha.Push(10);
+
+//foreach (int item in pilha)
+//{
+//    Console.WriteLine(item);
+//}
+
+//Console.WriteLine($"\nRemovendo o elemento {pilha.Pop()} do topo\n");
+
+//pilha.Push(20);
+
+//foreach (int item in pilha)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+
+
+
+
+
+
+
+//Exemplo de Fila
+//Queue <int> fila = new Queue <int> ();
+
+//fila.Enqueue (2);
+//fila.Enqueue(4);
+//fila.Enqueue(6);
+//fila.Enqueue(8);
+
+//foreach (int item in fila)
+//{
+//    Console.WriteLine(item);
+//}
+
+//Console.WriteLine($"\nRemovendo o elemento: {fila.Dequeue()} \n ");
+
+//fila.Enqueue(10);
+
+//foreach (int item in fila)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+
+
+//Utilizando o THROW
+//ExemploExcecao ex1 = new ExemploExcecao();
+//ex1.Metodo1();
+
+
+//Tratamento de exceções com o TRY/CATCH/FINALLY
+//try
+//{
+//    string[] linhas = File.ReadAllLines("C://git/dados_csharp/dados_csharp/dados_csharp/Arquivos/ArquivoLeitura.txt");
+
+//    foreach (string linha in linhas)
+//    {
+//        Console.WriteLine(linha);
+//    }
+
+//}
+
+//catch (FileNotFoundException ex)
+//{
+
+//    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
+//}
+
+//catch (DirectoryNotFoundException  ex)
+//{
+
+//    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Caminho da pasta não encontrado. {ex.Message}");
+//}
+
+
+//catch (Exception ex)
+//{
+
+//    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+//}
+
+//finally
+//{
+//    Console.WriteLine("Chegou até aqui!! Independente da Exceção");
+//}
+
+
+
+
+
+
 //DateTime com TryParse
 
 //string dataString = "2022-04-17 21:27 ";
