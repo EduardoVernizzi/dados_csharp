@@ -1,5 +1,75 @@
 ﻿using dados_csharp.Models;
 using System.Globalization;
+using System.Security.Cryptography;
+
+
+
+//If ternário
+
+//int numero = 15;
+//bool ehPar = false;
+
+//ehPar = numero % 2 == 0;
+//Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar")) ;
+
+
+//int numero = 15;
+
+//if (numero % 2 == 0)
+//{
+//    Console.WriteLine($"O número {numero} é par");
+//}
+//else
+//{
+//    Console.WriteLine($"O número {numero} é impar");
+//}
+
+
+
+
+
+
+
+
+//Desconstrutor
+
+//Pessoa p1 = new Pessoa("Carlos Eduardo", "Vernizzi");
+
+//(string nome, string sobrenome) = p1;
+
+//Console.WriteLine($"Nome: {nome} {sobrenome}");
+
+
+
+
+//Invocando método que retorna 3 informações através de tuplas
+
+//LeituraArquivo arquivo = new LeituraArquivo();
+//var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("C://git/dados_csharp/dados_csharp/dados_csharp/Arquivos/ArquivoLeitura.txt");
+
+//if (sucesso)
+//{
+//    Console.WriteLine($"Quantidade de linhas do arquivo: " + quantidadeLinhas);
+//    foreach (string linha in linhasArquivo)
+//    {
+//        Console.WriteLine(linha);
+//    }
+//}
+//else
+//{
+//    Console.WriteLine("Não foi possível ler o arquivo!");
+//}
+
+
+////Tuplas
+
+//(int, string, string,decimal) tupla = (1, "Eduardo", "Vernizzi", 1.85m);
+
+
+//Console.WriteLine($" Id: {tupla.Item1}");
+//Console.WriteLine($" Nome: {tupla.Item2}");
+//Console.WriteLine($" Sobrenome: {tupla.Item3}");
+//Console.WriteLine($" Altura: {tupla.Item4}");
 
 
 
@@ -38,17 +108,6 @@ using System.Globalization;
 //}
 
 
-
-
-
-
-
-
-
-
-
-
-
 //Exemplo de PILHAS
 //Stack<int> pilha = new Stack<int>();
 
@@ -70,12 +129,6 @@ using System.Globalization;
 //{
 //    Console.WriteLine(item);
 //}
-
-
-
-
-
-
 
 
 
