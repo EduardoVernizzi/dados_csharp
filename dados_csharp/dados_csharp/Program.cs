@@ -1,19 +1,52 @@
 ﻿using dados_csharp.Models;
 using System.Globalization;
+using System.Linq.Expressions;
 using System.Security.Cryptography;
+using Newtonsoft.Json;
+
+
+//Desserialização
+
+string conteudoArquivo = File.ReadAllText("C://git/dados_csharp/dados_csharp/dados_csharp/Arquivos/vendas.json");
+
+List<Venda> listVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+foreach (Venda venda in listVenda)
+{
+    Console.WriteLine($"Id {venda.Id}, Produto: {venda.Produto}, Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+}
 
 
 
-//If ternário
+//Serialização
+
+//DateTime dataAtual = DateTime.Now;
+
+//List<Venda> listaVendas = new List<Venda>();
+
+//Venda v1 = new Venda(1 , "Material de escritório", 25.00m, dataAtual);
+//Venda v2 = new Venda(2, "Licença de software", 110.00m, dataAtual);
+
+//listaVendas.Add(v1);
+//listaVendas.Add(v2);
+
+//string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+
+//File.WriteAllText("C://git/dados_csharp/dados_csharp/dados_csharp/Arquivos/vendas.json", serializado);
+
+//Console.WriteLine(serializado);
+
+
+////If ternário
 
 //int numero = 15;
 //bool ehPar = false;
 
 //ehPar = numero % 2 == 0;
-//Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar")) ;
+//Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
 
 
-//int numero = 15;
+
 
 //if (numero % 2 == 0)
 //{
@@ -23,11 +56,6 @@ using System.Security.Cryptography;
 //{
 //    Console.WriteLine($"O número {numero} é impar");
 //}
-
-
-
-
-
 
 
 
